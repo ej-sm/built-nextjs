@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import img from "/public/assets/d.png";
-import img2 from "/public/assets/p1.png";
-
 
 type Props = {}
 
@@ -23,7 +21,7 @@ const GetTouch = (props: Props) => {
 
                 <div className="md:w-2/5 w-full space-y-6">
                     <h3 className="md:text-5xl text-2xl font-bold text-primary md:pb-5">Get In Touch</h3>
-                    <h5 className="md:text-2xl text-lg font-semibold ">Ready to get Started. Excellent let's get started! Put in the details below and we will get a representative in touch for a personalised Discovery call so we can give you as much information on what our next steps will be to get your Project built. Ready to get started? Get it Built Today!</h5>
+                    <h5 className="md:text-2xl text-lg font-semibold ">Ready to get Started. Excellent lets get started! Put in the details below and we will get a representative in touch for a personalised Discovery call so we can give you as much information on what our next steps will be to get your Project built. Ready to get started? Get it Built Today!</h5>
                 </div>
 
                 <div className="md:w-2/5 w-full border-t-2 border-b-2 border-primary">
