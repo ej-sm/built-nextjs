@@ -1,26 +1,154 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* 
+ @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  body {
-    color: white;
-    background: black;
+
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
+}
+
+/* Slider Styles */
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* Before and After Pseudo-elements */
+.slider::before,
+.slider::after {
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+/* Slide Track Animation */
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(350px * 14);
+}
+
+/* Individual Slide Styles */
+.slide {
+  height: 300px;
+  width: 500px;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+/* 
+ @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+ background: white;
+} 
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* Slider Styles */
+.slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* Before and After Pseudo-elements */
+.slider::before,
+.slider::after {
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+/* Slide Track Animation */
+.slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(350px * 14);
+}
+
+/* Individual Slide Styles */
+.slide {
+  height: 300px;
+  width: 500px;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
 }
