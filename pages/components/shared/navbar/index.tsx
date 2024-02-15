@@ -21,8 +21,10 @@ const Navbar = () => {
   ;
 
   const isActive = (path: string) => {
-    return router === path ? "underline leading-relaxed" : "";
+    // Assuming router.path represents the current route path
+    return router.pathname === path ? "underline leading-relaxed" : "";
   };
+
 
   const closeModal = () => {
     setIsModalOpen(false);

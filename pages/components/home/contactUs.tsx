@@ -35,7 +35,7 @@ const ContactUs = (props: Props) => {
 
                 <div className="md:w-1/2 w-full space-y-6">
                     <h3 className="md:text-5xl text-2xl font-bold text-primary md:pb-5">New Builds in Central Otago</h3>
-                    <h5 className="md:text-2xl text-lg font-semibold ">Looks like you're ready to build, Here's the low down, we are ready and experienced to get your home ready and built, lets hop on call or hop over to our contact us so we can discuss design and expected cost and expected time. Get it Built here</h5>
+                    <h5 className="md:text-2xl text-lg font-semibold ">Looks like youre ready to build, Heres the low down, we are ready and experienced to get your home ready and built, lets hop on call or hop over to our contact us so we can discuss design and expected cost and expected time. Get it Built here</h5>
                 </div>
 
                 <div className="md:w-2/5 w-full">
