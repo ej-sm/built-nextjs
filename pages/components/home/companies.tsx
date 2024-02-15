@@ -46,7 +46,7 @@ const TrustedBySection = (props: Props) => {
                 <div className="slider">
                     <div className="slide-track">
                         {companies.map((company, i) => (
-                            <div key={i} className="">
+                            <div key={i} className="md:mx-10 mx-4">
                                 <Image src={company} alt="" className="w-3/4" />
                             </div>
                         ))}

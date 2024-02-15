@@ -18,8 +18,10 @@ const Footer = (props: Props) => {
             <div className="">
               <p className="text-lg ">Phone: 027 XXX  XXX</p>
               <p className="text-lg ">Email: info@email.co.nz</p>
-            <Image src={img} alt='' className='w-full' />
+            <div className="w-full pt-7 md:pt-0">
+              <Image src={img} alt='' className='' />
 
+            </div>
             </div>
 
         </div>

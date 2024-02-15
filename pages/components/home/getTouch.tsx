@@ -9,11 +9,11 @@ const GetTouch = (props: Props) => {
         <>
             <div className='mx-auto'>
                 <div className="md:py-16 py-10 ">
-                    <h1 className="md:text-4xl text-xl text-black font-bold text-center">Ready To Get Started </h1>
+                    <h1 className="md:text-6xl text-3xl text-black font-bold text-center">Ready To Get Started </h1>
                 </div>
 
 
-                <Image src={img} alt='' className='w-full' />
+                <Image src={img} alt='' className='w-full rounded-2xl mx-auto' />
 
             </div>
 

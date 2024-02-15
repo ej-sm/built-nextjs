@@ -94,11 +94,14 @@ const Navbar = () => {
                 <Link
                   key={item.label}
                   href={item.url}
-                  className={`hover:scale-105 hover:text-white duration-300 text-xl transition-all font-bold ${isActive(
+                  // style={{ fontWeight: '600' }}
+                  className={`hover:scale-105 hover:text-white  duration-300 text-xl transition-all font-bold ${isActive(
                     item.url
                   )}`}
                 >
-                  {item.label}
+                  <h2 className="font-bold text-lg cursor-pointer hover:text-gray">
+                    {item.label}
+                  </h2>
                 </Link>
               ))}
             </div>
@@ -117,14 +120,15 @@ const Navbar = () => {
               className="w-full h-screen fixed blurBg left-0 top-0 "
               onClick={closeModal}
             ></div>
-            <div className="bg-primary flex flex-col gap-3 relative left-0 w-full  px-10 z-20 py-16 transition-all duration-300">
+            <div className="bg-primary flex flex-col gap-3 absolute left-0 w-full  px-10 z-20 py-16 transition-all duration-300">
               
                 {menuItems.map((item) => (
                   <Link
                     onClick={() => setIsModalOpen(false)}
                     key={item.label}
                     href={item.url}
-                    className={`text-white font-medium text-lg hover:scale-105 hover:text-white duration-300 transition-all ${isActive(
+                    style={{ fontWeight: '600' }}
+                    className={`text-white font-medium cursor-pointer text-lg hover:scale-105 hover:text-white duration-300 transition-all ${isActive(
                       item.url
                     )}`}
                   >

@@ -17,8 +17,8 @@ const Hero = (props: Props) => {
                     className="relative mx-auto px-4 py-32 sm:px-6 lg:flex   md:min-h-[70vh] lg:px-8"
                 >
                     <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right space-y-4">
-                        <h1 className="text-3xl text-white font-extrabold sm:text-7xl">Why We build </h1>
-                        <h2 className="text-2xl text-white font-extrabold sm:text-4xl block  "> Why we Build</h2>
+                        <h1 className="text-3xl  font-extrabold sm:text-7xl" style={{color:'white'}}>Why We build </h1>
+                        <h2 className="text-2xl text-white font-extrabold sm:text-4xl block  " style={{ color: 'white' }}> Why we Build</h2>
 
                     </div>
                 </div>

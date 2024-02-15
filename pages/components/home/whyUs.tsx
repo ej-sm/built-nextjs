@@ -22,7 +22,7 @@ const WhyUs = (props: Props) => {
             <div className="md:py-20 py-10 lg:px-24 md:px-12 px-5 flex flex-wrap justify-center items-center">
                 <div className="lg:w-1/2 w-full flex flex-wrap justify-between items-center gap-5">
                     {data.map((item, i) => (
-                        <div key={i} className="w-[47%] shadow-md rounded-2xl space-y-5 p-5">
+                        <div key={i} className="md:w-[47%] w-full shadow-md rounded-2xl space-y-5 p-5">
                             <h2 className="md:text-2xl text-center text-xl font-semibold">
                                 {item.title}
                             </h2>

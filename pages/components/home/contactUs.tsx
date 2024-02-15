@@ -27,7 +27,7 @@ const ContactUs = (props: Props) => {
                         focus:border-primary focus:outline-none block w-full  px-5 py-3'/>
                         
                     </div>
-                    <button className="py-3 px-7 bg-[#ef4444] text-white ">Submit</button>
+                    <button className="py-3 px-7 bg-[#ef4444] text-white " style={{ color: 'white' }}>Submit</button>
                 </div>
             </div>
 
