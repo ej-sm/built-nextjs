@@ -1,5 +1,5 @@
 "use client";
-import { BtnArrow } from "../../../svgs";
+import { BtnArrow } from "../../svgs";
 import React from "react";
 
 type ButtonProps = {

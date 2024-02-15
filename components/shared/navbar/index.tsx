@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "/public/assets/logo.png";
 import Link from "next/link";
-import {  MenuBurger } from "../../../svgs";
+import { MenuBurger } from "../../svgs";
 import Section from "../common/Section";
 import { useRouter } from "next/router";
 
@@ -18,13 +18,10 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const router = useRouter();
 
-  ;
-
   const isActive = (path: string) => {
     // Assuming router.path represents the current route path
     return router.pathname === path ? "underline leading-relaxed" : "";
   };
-
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -102,13 +99,13 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-            
-              <button
-                onClick={() => setIsModalOpen(!isModalOpen)}
-                className="lg:hidden block "
-              >
-                <MenuBurger />
-              </button>
+
+            <button
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="lg:hidden block "
+            >
+              <MenuBurger />
+            </button>
           </div>
         </nav>
         {isModalOpen && (
@@ -118,20 +115,18 @@ const Navbar = () => {
               onClick={closeModal}
             ></div>
             <div className="bg-primary flex flex-col gap-3 relative left-0 w-full  px-10 z-20 py-16 transition-all duration-300">
-              
-                {menuItems.map((item) => (
-                  <Link
-                    onClick={() => setIsModalOpen(false)}
-                    key={item.label}
-                    href={item.url}
-                    className={`text-white font-medium text-lg hover:scale-105 hover:text-white duration-300 transition-all ${isActive(
-                      item.url
-                    )}`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              
+              {menuItems.map((item) => (
+                <Link
+                  onClick={() => setIsModalOpen(false)}
+                  key={item.label}
+                  href={item.url}
+                  className={`text-white font-medium text-lg hover:scale-105 hover:text-white duration-300 transition-all ${isActive(
+                    item.url
+                  )}`}
+                >
+                  {item.label}
+                </Link>
+              ))}
             </div>
           </>
         )}
