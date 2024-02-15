@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import logo from "/public/assets/logo.png";
 import Link from "next/link";
-import {  MenuBurger } from "../../../svgs";
+import { MenuBurger } from "../../svgs";
 import Section from "../common/Section";
 import { useRouter } from "next/router";
 
@@ -18,13 +18,10 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const router = useRouter();
 
-  ;
-
   const isActive = (path: string) => {
     // Assuming router.path represents the current route path
     return router.pathname === path ? "underline leading-relaxed" : "";
   };
-
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -105,13 +102,13 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-            
-              <button
-                onClick={() => setIsModalOpen(!isModalOpen)}
-                className="lg:hidden block "
-              >
-                <MenuBurger />
-              </button>
+
+            <button
+              onClick={() => setIsModalOpen(!isModalOpen)}
+              className="lg:hidden block "
+            >
+              <MenuBurger />
+            </button>
           </div>
         </nav>
         {isModalOpen && (
