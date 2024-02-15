@@ -82,7 +82,9 @@ const Navbar = () => {
               <Image
                 src={logo}
                 alt=""
-                className=" hover:scale-105  duration-300 transition-all md:w-1/4 w-[70px]"
+                width={200}
+                height={70}
+                className=" hover:scale-105  duration-300 transition-all "
               />
             </Link>
             <div className="lg:flex items-center hidden gap-7 ">
